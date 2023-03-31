@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="SAMAN___.TTF">
+    <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74e5afab15.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Spinnaker&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script-->
+    <title>Aihika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Handlee&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+
+.buttons {
+
+/* padding-left:5%;*/
+
+text-align: center;
+margin: 0 auto;
+position: absolute;
+top: 72%;
+width: 100%;
+
+
+
+}
+.btn button {
+
+width: 25%;
+height: 80px;
+
+font-size: 40px;
+
+color: white;
+background-color: rgba(255, 176, 6, 0.5);
+/* box-shadow: 8px 4px rgba(241, 7, 7, 0.7),8px 0 8px 4px rgba(241, 7, 7, 0.7);*/
+border: 0px;
+border-radius:20%;
+
+
+
+}
+.navbar a:hover{
+    color:rgba(201,67,67,0.959);
+    cursor: pointer;
+    background-color: rgb(238, 230, 119);
+}
+.contactus{
+    width:98.7%;
+    height:30%;
+    background-image:linear-gradient(rgba(61, 56, 57, 0.8),rgba(136, 138, 47, 0.8));
+    font-size: 20px;
+    /*transform: translate(60%,-110%);*/
+   
+    /*display:none;*/
+    text-align: center;
+    font-family: cursive;
+    padding:10px;
+    color:rgb(229, 245, 7);
+}
+
+.contactus1{
+    list-style-type: none;
+}
+
+h2{
+
+    font-size: 40px;
+}
+.navbar a{
+    padding:30px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: Verdana;
+    font-weight: 200;
+    color:rgb(27, 17, 17);
+    
+
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="mbody">
+        <nav>
+            <div class="navbar" style="height:112px">
+                <img class="img1" src="images/logo5.png"  style="width:110px;height:110px;">
+                <img class="img2" src="images/logotext1.png" >
+                <div class="navtext">
+                    <a href="main.html">HOME</a>
+                    <a href="aboutus.html">ABOUT US</a>
+                    <span><a href="#contactus">CONTACT US</a></span>
+                </div>
+            </div>
+
+
+        </nav>
+        <h1 style="font-size:90px;font-weight:300;font-family:'Cookie',cursive;">Welcome to<br><span class="aitext" style="font-size: 180px;margin-top:10px"> AIHIKA</span></h1>
+        <div class="buttons">
+            <a href="blogin.php">
+                <div class="btn"> <button style="margin-right: 5%;">BUY</button></div>
+            </a>
+            <a href="slogin.php">
+                <div class="btn"> <button>SELL</button></div>
+            </a>
+        </div>
+
+    </div>
+    <footer>
+        <div class="contactus" id="contactus">
+
+            <ul class="contactus1">
+                <li>
+                    <h2 class="h2contactus"> Contact Us </h2>
+                </li>
+                <li>
+
+                    <p class="pcontactus">
+                    <h3 class="h3contactus">Address:<br>&nbsp; Opposite Nitte Mahalinga Adyantaya Memorial Institute of technology<br>Nitte,karkala,Udupi District<br> &nbsp;Karnataka.</h3>
+                    </p>
+                </li>
+
+                <li style="text-decoration: none;"><a class="footer" href="tel:+917308612390"><i class="fas fa-phone-alt">Phone</i>:+917308612390
+                    </a></li>
+                <li><a class="footer" href="mailto:arashmibhat@gmail.com"><i class="fa fa-envelope"
+                            aria-hidden="true">Mail</i>:abcd@gmail.com</a></li>
+
+            </ul>
+        </div>
+
+
+        </footer>
+        <script>
+            const arr = ["images/img7.jpg", "images/img11.jpeg", "images/img12.jpeg", "images/img14.jpeg", "images/img15.jpeg"];
+            var x = document.getElementsByClassName("mbody");
+
+
+            var slideTime = 4000; // 3 seconds
+
+            var i = 0;
+
+            function changePicture() {
+            //document.getElementsByClassName("mbody").setAttribute("style","background-image:url("+arr[i]+")");
+              document.body.style.backgroundImage="url('"+arr[i]+"')";
+          
+              if (i < arr.length - 1) {
+                  i++;
+              } else {
+                  i = 0;
+              }
+          
+              setTimeout("changePicture()", slideTime);
+          }
+          
+          window.onload = changePicture;
+
+
+            
+        </script>
+
+
+</body>
+
+</html>
